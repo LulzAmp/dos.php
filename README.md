@@ -1,7 +1,7 @@
 # dos.php
 Simple DoS Webshell in PHP.
 
-This has originally been made by my friend (https://github.com/DataBuster/)[@Busterz].
+This has originally been made by my friend [@Busterz](https://github.com/DataBuster/).
 
 ### Requirements
 * Webserver that can handle PHP.
