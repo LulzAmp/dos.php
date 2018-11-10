@@ -59,9 +59,7 @@ if(isset($_POST['host'])&&isset($_POST['port'])&&isset($_POST['method'])&&isset(
 		die('Invalid IP Address.<meta http-equiv="refresh" content="3"/>');
 	}
 
-	if($p > 65535){
-		$p = rand(1,65535);
-	}elseif($p < 1){
+	if($p > 65535 || $p < 1){
 		$p = rand(1,65535);
 	}
 
