@@ -5,4 +5,4 @@ This has originally been made by my friend [@OfficialDataBuster](https://github.
 
 ### Requirements
 * Webserver that can handle PHP.
-* Host that doesn't block UDP and TCP.
+* Hosting that doesn't block UDP and TCP.
