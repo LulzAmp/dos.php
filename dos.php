@@ -99,7 +99,7 @@ if(isset($_POST['host'])&&isset($_POST['port'])&&isset($_POST['method'])&&isset(
 	<body>
 		<?php
 		if(isset($output)){
-			echo $output; //you can put some nice alert with output around this.
+			echo '<div>'.$output.'</div>'; //you can put some nice alert with output around this.
 		}
 		?>
 		<div id="form">
